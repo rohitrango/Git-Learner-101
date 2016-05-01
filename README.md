@@ -51,6 +51,8 @@
 ## Git diff (see the differences between latest commit and uncommitted changes)
 	`git diff`
 
+## Aliases (to reduce writing)
+	alias gs = 'git status'
 
 ## Useful links
 ### [A free online course on learning git](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
