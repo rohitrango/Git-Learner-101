@@ -1,57 +1,57 @@
 ## Git install -
-	`sudo apt-get install git`
+	sudo apt-get install git
 
 ## Git config - 
-	```
+	
 	git config --global user.name "Your user name"
 	git config --global user.email "Email"
 	git config --global core.autocrlf input
 	git config --global core.safecrlf true
-	```
+	
 
 ## To check whether settings are correctly configured - 
-	`git config --list`
+	git config --list
 
 ## To change the config settings use this command (use your favourite editor like subl, nano, etc instead of gedit) -
-	`gedit ~/.gitconfig` 				
+	gedit ~/.gitconfig 				
 
 ## Git staging and commiting
-	```
+	
 	git status
 	git add <file>
 	git commit -m "File message" 
-	git commit 	```	(Opens vim editor to enter commit message)
+	git commit 		(Opens vim editor to enter commit message)
 
 
 ## Seeing all your commit history (newest commits on top) 
-	`git log` 
+	git log 
 
 ## Changing the default editor for entering commit messages 
-	`git config --global core.editor <editor_name> `		(subl, gedit)
+	git config --global core.editor <editor_name> 		(subl, gedit)
 
 ## Adding a remote 
-	```
+	
 	git remote add origin <remote_url>
-	git remote -v 	```	(See all the remotes that are connected)
+	git remote -v 		(See all the remotes that are connected)
 
 ## Cloning a different repository
-	`git clone <remote_url>`
+	git clone <remote_url>
 
-### **Note**: If you have your own repository, then use `git init` to initialize it, `git add remote` to connect it to the remote server(github, gitlab, etc) and then `git push` and `git pull` to make changes. If you need to take code/files from a different repository, use `git clone <url>`.
+### **Note**: If you have your own repository, then use git init to initialize it, git add remote to connect it to the remote server(github, gitlab, etc) and then git push and git pull to make changes. If you need to take code/files from a different repository, use git clone <url>.
 
 ## Push and pull (push updates files from local machine to remote, pull updates files from remote to local repository). Think it as 'pulling' or 'pushing' from remote to your local machine.
 
-	```
+	
 	git pull <remote_name> <branch_name>
 	git push <remote_name> <branch_name>
-	```
+	
 ## Git stash (to discard all the un-committed changes made after YOUR final commit, if you end up in a messy state or some state similar to that or when you want to pull from a remote repository)
-	`git stash`
+	git stash
 
 ## Git diff (see the differences between latest commit and uncommitted changes)
-	`git diff`
+	git diff
 
-## Aliases (to reduce writing)
+## Git aliases (reduce typing)
 	alias gs = 'git status'
 
 ## Useful links
